@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>jQuery Maito :: Daniel Camargo - Front-end developer</title>
+<script src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="jQuery.mailto.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css" media="screen">
+body{
+	font-family:Georgia,"Times New Roman",serif;
+}
+address{
+	border:1px dashed #CCC;
+	padding:15px;
+}
+</style>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+		$('address.mail').mailto({'domain':'gmail', 'extension':'com'});
+});
+</script>
+</head>
+<body>
+	<div id="content">
+		<h2>
+			jQuery Maito
+		</h2>
+		<address class="mail">
+			pererinha
+		</address>
+	</div>
+	<p>
+		<a href="http://www.danielcamargo.com.br/stuffs/jquery-mailto/" title="what is that?">what is that?</a>
+	</p>
+</body>
+</html>
