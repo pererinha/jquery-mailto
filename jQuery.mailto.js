@@ -13,8 +13,6 @@
         // iterate and reformat each matched element
         return this.each(function () {
             $this = $(this);
-            // build element specific options
-            var o = $.meta ? $.extend({}, opts, $this.data()) : opts;
             var address = $this.html();
             // call our format function
             link = $.fn.mailto.format(address, opts);
